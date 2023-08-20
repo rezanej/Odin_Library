@@ -28,26 +28,13 @@
                     </tr>
                 </thead>
                 <tbody>
-                    <tr>
-                        <td>test 1 lo</td>
-                        <td>dav</td>
-                        <td>343</td>
-                        <td>Yes</td>
-                        <td><button class="button" type="button" data="1">Delete</button></td>
-                    </tr>
-                    <tr>
-                        <td>test 2</td>
-                        <td>dav</td>
-                        <td>23</td>
-                        <td>No</td>
-                        <td><button class="button" type="button" data="2">Delete</button></td>
-                    </tr>
+                
                 </tbody>
             </table>
         </div>
-            <button class="button" type="button">Add Book</button>
+            <button class="button" id="addBook" type="button">Add Book</button>
         </div>
-        <dialog>
+        <dialog >
             <form action="/" method="dialog">
                 <div>
                     <label for="title">Title</label>
@@ -63,10 +50,13 @@
                 </div>
                 <div>
                     <label for="read">Have you read it:</label>
-                    <input type="checkbox" name="read" id="read">
+                    <select name="read" id="read">
+                        <option value="Yes">Yes</option>
+                        <option value="No" selected>No</option>
+                    </select>
                 </div>
                 <div>
-                    <button type="button" class="button">Add</button>
+                    <button type="button" class="button" id="add">Add</button>
                     <button type="button" class="button" id="cancel">Cancel</button>
                 </div>
             </form>
