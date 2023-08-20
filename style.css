@@ -1,0 +1,94 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --backgroundColor:white;
+    --textColor:black;
+    --buttonHoverBackgroundColor:#666;
+    --buttonActiveBackgroundColor:#999;
+
+}
+@font-face {
+    font-family: roboto;
+    src: url('fonts/Roboto-Regular.ttf');
+    font-weight: normal;
+}
+@font-face {
+    font-family: roboto;
+    src: url('fonts/Roboto-Bold.ttf');
+    font-weight: bold;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+    font-family: roboto;
+    
+}
+body{
+    display: flex;
+    flex-direction: column;
+}
+header,footer{
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+    padding: 15px 0px;
+}
+.container{
+    margin: auto;
+    width: 80%;
+}
+footer{
+    display: grid;
+    align-content: center;
+    justify-content: center;
+    grid-template-columns: 200px;
+    margin-top: auto;
+}
+.wrapper{
+    border-radius: 5px;
+    overflow: hidden;
+    width: fit-content;
+    border: 1px solid var(--textColor);
+    border-collapse: separate;
+}
+th,td,table{
+    border: 2px solid var(--textColor);
+    border-collapse: collapse;
+}
+
+main .container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+}
+main .container h3{
+    align-self: flex-start;
+}
+th,td{
+    padding: 10px 15px;
+    text-align: left;
+}
+th:nth-child(1),th:nth-child(2),th:nth-child(3){
+    width: 200px;
+}
+th:last-child{
+    text-align: center;
+}
+.button{
+    padding: 0.5rem 1.6rem;
+    background-color: var(--textColor);
+    color: var(--backgroundColor);
+    border: none;
+    border-radius: 5px;
+}
+.button:hover{
+    background-color:var(--buttonHoverBackgroundColor) ;
+}
+.button:active{
+    background-color: var(--buttonActiveBackgroundColor);
+}
